@@ -1,6 +1,6 @@
 {
     "name": "notifications-outsystems-plugin",
-    "version": "0.0.3",
+    "version": "1.0.4",
     "description": "An Android Notification Cordova plugin .",
     "cordova": {
       "id": "notifications-outsystems-plugin",
