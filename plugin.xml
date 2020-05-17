@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="notifications-outsystems-plugin" version="0.0.1">
+        id="notifications-outsystems-plugin" version="git ">
     <name>ChripPlugin</name>
 
     <description>An Android Cordova plugin for Notifications .</description>
@@ -42,4 +42,11 @@
         <source-file src="src/android/CustomFirebaseMessagingService.java" target-dir="src/org/notification" />
            <source-file src="src/android/NotificationPlugin.java" target-dir="src/org/notification" />      
     </platform>
+
+
+
+
+
+
+    
 </plugin>
