@@ -39,7 +39,7 @@
         <framework src="src/android/notification.gradle" custom="true" type="gradleReference"/>
         <source-file src="src/android/CustomFirebaseMessagingService.java" target-dir="src/org/notification" />
            <source-file src="src/android/NotificationPlugin.java" target-dir="src/org/notification" />   
-           <source-file src="src/android/google-services.json" target-dir="app/" />      
+         <!--  <source-file src="src/android/google-services.json" target-dir="app/" />      -->
     </platform>
 
 
