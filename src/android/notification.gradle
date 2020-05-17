@@ -1,0 +1,14 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.3'
+
+    }
+}
+
+apply plugin: com.google.gms.googleservices.GoogleServicesPlugin

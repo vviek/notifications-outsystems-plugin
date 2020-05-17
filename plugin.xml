@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="notifications-outsystems-plugin" version="0.0.1">
+    <name>ChripPlugin</name>
+
+    <description>An Android Cordova plugin for Notifications .</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,notification</keywords>
+    <repo>https://github.com/vviek/notifications-outsystems-plugin.git</repo>
+    <issue>https://github.com/vviek/notifications-outsystems-plugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/notification.js" name="notification">
+        <clobbers target="window.plugins.notification" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+    <feature name="NotificationPlugin">
+        <param
+            name="android-package"
+            value="org.notification.NotificationPlugin" />
+    </feature>
+        </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <service android:name="org.notification.CustomFirebaseMessagingService">
+        <intent-filter>
+          <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter>
+      </service>
+    </config-file>
+
+        <framework src="com.google.firebase:firebase-core:16.0.1" />
+        <framework src="com.google.firebase:firebase-messaging:17.3.4" />
+        
+        <framework src="src/android/notification.gradle" custom="true" type="gradleReference"/>
+        <source-file src="src/android/CustomFirebaseMessagingService.java" target-dir="src/org/notification" />
+           <source-file src="src/android/NotificationPlugin.java" target-dir="src/org/notification" />      
+    </platform>
+</plugin>
