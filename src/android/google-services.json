@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "12982344901",
+    "firebase_url": "https://netlinknotification.firebaseio.com",
+    "project_id": "netlinknotification",
+    "storage_bucket": "netlinknotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12982344901:android:b58cb78a93dd2423c524ac",
+        "android_client_info": {
+          "package_name": "com.gems.pt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12982344901-as60irb6glkik3d95h0dnkhj1dabktks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXNT-LiMTXhHL-UxWDXGdj6AYIUHn0gBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12982344901-as60irb6glkik3d95h0dnkhj1dabktks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
