@@ -16,6 +16,8 @@
     <js-module src="www/notification.js" name="notification">
         <clobbers target="window.plugins.notification" />
     </js-module>
+  <hook type="before_plugin_install" src="hooks/outsystems/handle_google_services.js" />
+  <hook type="after_plugin_install" src="hooks/outsystems/google_services_cleanup.js" />
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
     <feature name="NotificationPlugin">
