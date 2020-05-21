@@ -28,11 +28,11 @@ public class NotificationPlugin extends CordovaPlugin {
                                 return;
                             }
                          
-                            JSONArray jsonArrayObj=new JSONArray();
+                            //JSONArray jsonArrayObj=new JSONArray();
                          
-                            jsonArrayObj.put(task.getResult().getToken());
+                            //jsonArrayObj.put(task.getResult().getToken());
                          
-                            callbackContext.success(jsonArrayObj);
+                            callbackContext.success(task.getResult().getToken());
                          
                         }
                     });
