@@ -2,7 +2,7 @@
   function Notification() {
   }
   
-  Notification.prototype.register = function (message, successCallback, errorCallback) {
+  Notification.prototype.register = function (successCallback, errorCallback) {
   
    cordova.exec(successCallback, errorCallback, "NotificationPlugin", "register", []);
   };
